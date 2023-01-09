@@ -18,13 +18,10 @@ public class DriverProfile extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_driver_profile);
 
-
-
-
-        ratingBar = findViewById(R.id.rating_Bar);
-        btSubmit = findViewById(R.id.bt_Submit);
+        RatingBar ratingBar = findViewById(R.id.rating_Bar);
+        Button btSubmit = findViewById(R.id.bt_Submit);
 
         btSubmit.setOnClickListener(new View.OnClickListener() {
             @Override

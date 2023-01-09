@@ -7,6 +7,7 @@ import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.navigation.Navigation;
 
+import android.provider.ContactsContract;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -21,6 +22,8 @@ import android.widget.ImageButton;
 public class menu extends Fragment implements View.OnClickListener{
 
     private ImageButton btnlive;
+    private ImageButton btndriver;
+
     View view;
 
     // TODO: Rename parameter arguments, choose names that match
@@ -68,8 +71,10 @@ public class menu extends Fragment implements View.OnClickListener{
                              Bundle savedInstanceState) {
         view = inflater.inflate(R.layout.fragment_menu, container, false);
         ImageButton btnlive = (ImageButton)view.findViewById(R.id.BtnLive);
+        ImageButton btndriver = (ImageButton)view.findViewById(R.id.BtnDriver);
 
         btnlive.setOnClickListener(this);
+        btndriver.setOnClickListener(this);
         return view;
         // Inflate the layout for this fragment
        // return inflater.inflate(R.layout.fragment_menu, container, false);
@@ -101,10 +106,14 @@ public class menu extends Fragment implements View.OnClickListener{
 
     @Override
     public void onClick(View view) {
-        switch (
-
-        )
-        Intent intent = new Intent(view.getContext(), MapsActivity.class);
-        menu.this.startActivity(intent);
+        switch (view.getId()){
+            case R.id.BtnLive:
+                Intent live = new Intent(view.getContext(), MapsActivity.class);
+                menu.this.startActivity(live);
+                break;
+            case R.id.BtnDriver:
+                Intent driver = new Intent(view.getContext(), DriverProfile.class);
+                menu.this.startActivity(driver);
+        }
     }
 }

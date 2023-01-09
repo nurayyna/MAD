@@ -59,6 +59,7 @@
         android:id="@+id/rating_Bar"
         android:layout_width="242dp"
         android:layout_height="61dp"
+        android:contentDescription="a rating bar"
         android:visibility="visible"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
