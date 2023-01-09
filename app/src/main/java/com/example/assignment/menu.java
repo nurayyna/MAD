@@ -23,6 +23,7 @@ public class menu extends Fragment implements View.OnClickListener{
 
     private ImageButton btnlive;
     private ImageButton btndriver;
+    private ImageButton btnroutes;
 
     View view;
 
@@ -71,10 +72,12 @@ public class menu extends Fragment implements View.OnClickListener{
                              Bundle savedInstanceState) {
         view = inflater.inflate(R.layout.fragment_menu, container, false);
         ImageButton btnlive = (ImageButton)view.findViewById(R.id.BtnLive);
-        ImageButton btndriver = (ImageButton)view.findViewById(R.id.BtnDriver);
+        ImageButton btndriver =(ImageButton)view.findViewById(R.id.BtnDriver);
+        ImageButton btnroutes =(ImageButton)view.findViewById(R.id.BtnRoutes);
 
         btnlive.setOnClickListener(this);
         btndriver.setOnClickListener(this);
+        btnroutes.setOnClickListener(this);
         return view;
         // Inflate the layout for this fragment
        // return inflater.inflate(R.layout.fragment_menu, container, false);
@@ -114,6 +117,11 @@ public class menu extends Fragment implements View.OnClickListener{
             case R.id.BtnDriver:
                 Intent driver = new Intent(view.getContext(), DriverProfile.class);
                 menu.this.startActivity(driver);
+                break;
+            case R.id.BtnRoutes:
+                Intent routes = new Intent(view.getContext(),RouteActivity.class);
+                menu.this.startActivity(routes);
+                break;
         }
     }
 }

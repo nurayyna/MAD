@@ -67,7 +67,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageButton
-        android:id="@+id/imageButton4"
+        android:id="@+id/BtnRoutes"
         android:layout_width="83dp"
         android:layout_height="69dp"
         android:backgroundTint="#FEFEFE"
@@ -112,7 +112,7 @@
         android:layout_height="69dp"
         android:backgroundTint="#FEFEFE"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/imageButton4"
+        app:layout_constraintEnd_toStartOf="@+id/BtnRoutes"
         app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@drawable/frame_9" />
 
