@@ -56,17 +56,17 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageButton
-        android:id="@+id/imageButton4"
+        android:id="@+id/BtnRoutes"
         android:layout_width="83dp"
         android:layout_height="69dp"
         android:backgroundTint="#FEFEFE"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/imageButton13"
+        app:layout_constraintEnd_toStartOf="@+id/BtnDriver"
         app:layout_constraintStart_toEndOf="@+id/imageButton9"
         app:srcCompat="@drawable/frame_13" />
 
     <ImageButton
-        android:id="@+id/imageButton13"
+        android:id="@+id/BtnDriver"
         android:layout_width="83dp"
         android:layout_height="69dp"
         android:backgroundTint="#FEFEFE"
@@ -96,12 +96,12 @@
         app:srcCompat="@drawable/frame_16" />
 
     <ImageButton
-        android:id="@+id/imageButton17"
+        android:id="@+id/BtnLive"
         android:layout_width="83dp"
         android:layout_height="69dp"
         android:backgroundTint="#FEFEFE"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/imageButton4"
+        app:layout_constraintEnd_toStartOf="@+id/BtnRoutes"
         app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@drawable/frame_9" />
 

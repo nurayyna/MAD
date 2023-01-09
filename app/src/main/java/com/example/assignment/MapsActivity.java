@@ -4,11 +4,9 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
-import androidx.fragment.app.FragmentActivity;
+
 
 import android.Manifest;
-import android.annotation.SuppressLint;
-import android.app.DownloadManager;
 import android.content.pm.PackageManager;
 import android.graphics.Point;
 import android.location.Location;
@@ -16,7 +14,6 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.widget.Switch;
 
 import com.android.volley.DefaultRetryPolicy;
 import com.android.volley.Request;
@@ -143,8 +140,6 @@ public class MapsActivity extends AppCompatActivity {
                 direction();
             }
         });
-
-
 
     }
 
