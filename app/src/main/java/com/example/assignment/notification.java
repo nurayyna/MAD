@@ -2,11 +2,14 @@ package com.example.assignment;
 
 import android.os.Bundle;
 
+import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
+import androidx.navigation.Navigation;
 
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageButton;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -60,5 +63,12 @@ public class notification extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_notification, container, false);
+    }
+    public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
+
+        ImageButton BtnBack = view.findViewById(R.id.imageButton2);
+        View.OnClickListener AboutUs = v -> Navigation.findNavController(view).navigate(R.id.menu);
+        BtnBack.setOnClickListener(AboutUs);
+
     }
 }

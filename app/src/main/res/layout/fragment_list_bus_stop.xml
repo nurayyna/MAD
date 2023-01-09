@@ -1,12 +1,346 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ListBusStop">
+    tools:context=".ListBusStop" >
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/recycler_view"
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
-</FrameLayout>
+        android:layout_height="match_parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="66dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar4"
+                android:layout_width="419dp"
+                android:layout_height="54dp"
+                android:background="#306DD9"
+                android:minHeight="?attr/actionBarSize"
+                android:theme="?attr/actionBarTheme"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:title="Bus Stop"
+                app:titleMarginStart="70dp" />
+
+            <ImageButton
+                android:id="@+id/backButton51"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="-51dp"
+                android:backgroundTint="#306DD8"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/frame_19__2_" />
+
+            <TextView
+                android:id="@+id/stop1"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="22dp"
+                android:firstBaselineToTopHeight="20dp"
+                android:text="Academy of Islamic Studies (API)"
+                android:textColor="#000000"
+                android:textSize="20sp">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/stop2"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_marginLeft="22dp"
+                android:firstBaselineToTopHeight="20dp"
+                android:text="Academy of Malay Studies"
+                android:textColor="#000000"
+                android:textSize="20sp"></TextView>
+
+            <TextView
+                android:id="@+id/stop3"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_marginLeft="22dp"
+                android:firstBaselineToTopHeight="20dp"
+                android:text="Angkasapuri"
+                android:textColor="#000000"
+                android:textSize="20sp">
+            </TextView>
+
+            <TextView
+                android:id="@+id/stop4"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_marginLeft="22dp"
+                android:firstBaselineToTopHeight="20dp"
+                android:text="API (Luar)"
+                android:textColor="#000000"
+                android:textSize="20sp">
+            </TextView>
+
+            <TextView
+                android:id="@+id/stop5"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_marginLeft="22dp"
+                android:firstBaselineToTopHeight="20dp"
+                android:text="Bangsar South"
+                android:textColor="#000000"
+                android:textSize="20sp">
+            </TextView>
+
+            <TextView
+                android:id="@+id/stop6"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_marginLeft="22dp"
+                android:firstBaselineToTopHeight="20dp"
+                android:text="Dayasari Residential College (KK5)"
+                android:textColor="#000000"
+                android:textSize="20sp">
+            </TextView>
+
+            <TextView
+                android:id="@+id/stop7"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_marginLeft="22dp"
+                android:firstBaselineToTopHeight="20dp"
+                android:text="Dewan Tuanku Canselor"
+                android:textColor="#000000"
+                android:textSize="20sp">
+            </TextView>
+
+            <TextView
+                android:id="@+id/stop8"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_marginLeft="22dp"
+                android:firstBaselineToTopHeight="20dp"
+                android:text="Faculty of Engineering"
+                android:textColor="#000000"
+                android:textSize="20sp">
+            </TextView>
+
+            <TextView
+                android:id="@+id/stop9"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_marginLeft="22dp"
+                android:firstBaselineToTopHeight="20dp"
+                android:text="Faculty of Business and Accounting"
+                android:textColor="#000000"
+                android:textSize="20sp">
+            </TextView>
+
+            <TextView
+                android:id="@+id/stop10"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_marginLeft="22dp"
+                android:firstBaselineToTopHeight="20dp"
+                android:text="International House"
+                android:textColor="#000000"
+                android:textSize="20sp">
+            </TextView>
+
+            <TextView
+                android:id="@+id/stop11"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_marginLeft="22dp"
+                android:firstBaselineToTopHeight="20dp"
+                android:text="Kinabalu(KK8)/Tun Ahmad Zaidi (KK10) and FSKTM"
+                android:textColor="#000000"
+                android:textSize="20sp">
+            </TextView>
+
+            <TextView
+                android:id="@+id/stop12"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_marginLeft="22dp"
+                android:firstBaselineToTopHeight="30dp"
+                android:text="Kurshiah(KK3)/Bestari(KK4)/Za'ba(KK7)"
+                android:textColor="#000000"
+                android:textSize="20sp">
+            </TextView>
+
+            <TextView
+                android:id="@+id/stop13"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_marginLeft="22dp"
+                android:firstBaselineToTopHeight="20dp"
+                android:text="LRT Universiti"
+                android:textColor="#000000"
+                android:textSize="20sp">
+            </TextView>
+
+            <TextView
+                android:id="@+id/stop14"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_marginLeft="22dp"
+                android:firstBaselineToTopHeight="20dp"
+                android:text="MRT Phileo Damansara"
+                android:textColor="#000000"
+                android:textSize="20sp">
+            </TextView>
+
+            <TextView
+                android:id="@+id/stop15"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_marginLeft="22dp"
+                android:firstBaselineToTopHeight="20dp"
+                android:text="Pantai Permai"
+                android:textColor="#000000"
+                android:textSize="20sp">
+            </TextView>
+
+            <TextView
+                android:id="@+id/stop16"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_marginLeft="22dp"
+                android:firstBaselineToTopHeight="20dp"
+                android:text="PASUM"
+                android:textColor="#000000"
+                android:textSize="20sp">
+            </TextView>
+
+            <TextView
+                android:id="@+id/stop17"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_marginLeft="22dp"
+                android:firstBaselineToTopHeight="20dp"
+                android:text="PJ 219 Happy Mansion Apartment"
+                android:textColor="#000000"
+                android:textSize="20sp">
+            </TextView>
+
+            <TextView
+                android:id="@+id/stop18"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_marginLeft="22dp"
+                android:firstBaselineToTopHeight="20dp"
+                android:text="PJ 220 Happy Apartment Gate A"
+                android:textColor="#000000"
+                android:textSize="20sp">
+            </TextView>
+
+            <TextView
+                android:id="@+id/stop19"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_marginLeft="22dp"
+                android:firstBaselineToTopHeight="20dp"
+                android:text="Pj 223 Shell 17/22"
+                android:textColor="#000000"
+                android:textSize="20sp">
+            </TextView>
+
+            <TextView
+                android:id="@+id/stop20"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_marginLeft="22dp"
+                android:firstBaselineToTopHeight="20dp"
+                android:text="Raja Dr Nazrin Shah (KK12)"
+                android:textColor="#000000"
+                android:textSize="20sp">
+            </TextView>
+
+            <TextView
+                android:id="@+id/stop21"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_marginLeft="22dp"
+                android:firstBaselineToTopHeight="20dp"
+                android:text="S.K. Sri Damai"
+                android:textColor="#000000"
+                android:textSize="20sp">
+            </TextView>
+
+            <TextView
+                android:id="@+id/stop22"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_marginLeft="22dp"
+                android:firstBaselineToTopHeight="20dp"
+                android:text="Stadium Hockey"
+                android:textColor="#000000"
+                android:textSize="20sp">
+            </TextView>
+
+            <TextView
+                android:id="@+id/stop23"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_marginLeft="22dp"
+                android:firstBaselineToTopHeight="20dp"
+                android:text="Tuanku Abdul Rahman (KK1)"
+                android:textColor="#000000"
+                android:textSize="20sp">
+            </TextView>
+
+            <TextView
+                android:id="@+id/stop24"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_marginLeft="22dp"
+                android:firstBaselineToTopHeight="20dp"
+                android:text="Tun Syed Zahiruddin (KK9)"
+                android:textColor="#000000"
+                android:textSize="20sp">
+            </TextView>
+
+            <TextView
+                android:id="@+id/stop25"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_marginLeft="22dp"
+                android:firstBaselineToTopHeight="20dp"
+                android:text="UIA PJ (Barat)"
+                android:textColor="#000000"
+                android:textSize="20sp">
+            </TextView>
+
+            <TextView
+                android:id="@+id/stop26"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_marginLeft="22dp"
+                android:firstBaselineToTopHeight="20dp"
+                android:text="UM Central"
+                android:textColor="#000000"
+                android:textSize="20sp">
+            </TextView>
+
+            <TextView
+                android:id="@+id/stop27"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_marginLeft="22dp"
+                android:firstBaselineToTopHeight="20dp"
+                android:text="Ungku Aziz (KK11)"
+                android:textColor="#000000"
+                android:textSize="20sp">
+            </TextView>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</androidx.core.widget.NestedScrollView>
