@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relativeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MapsActivity">
+
+    <TextView
+        android:id="@+id/TopBar"
+        android:layout_width="411dp"
+        android:layout_height="86dp"
+        android:layout_marginBottom="652dp"
+        android:background="#306DD9"
+        android:textAlignment="viewStart"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <fragment
+        android:id="@+id/FragMap"
+        xmlns:map="http://schemas.android.com/apk/res-auto"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="411dp"
+        android:layout_height="302dp"
+        android:layout_marginBottom="350dp"
+        map:mapType="hybrid"
+        map:uiZoomControls="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/TVRoute"
+        android:layout_width="416dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="324dp"
+        android:background="#306DD9"
+        android:text="    Select Route"
+        android:textAlignment="viewStart"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ScrollView
+        android:layout_width="409dp"
+        android:layout_height="322dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginBottom="1dp"
+        android:contentDescription="scroll for route"
+        android:fillViewport="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/Route7"
+                android:layout_width="0dp"
+                android:layout_height="71dp"
+                android:layout_marginTop="436dp"
+                android:backgroundTint="#FFFFFF"
+                android:text="Shuttle Khas Mrt Phileo Damansara"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/Route6"
+                android:layout_width="0dp"
+                android:layout_height="71dp"
+                android:layout_marginTop="364dp"
+                android:backgroundTint="#FFFFFF"
+                android:text="SHUTTLE KHAS LRT UNIVERSITI"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/Route5"
+                android:layout_width="0dp"
+                android:layout_height="71dp"
+                android:layout_marginTop="292dp"
+                android:backgroundTint="#FFFFFF"
+                android:text="UM SENTRAL - PASUM - AKADEMIK PENGAJIAN ISLAM - KK3/4/7 - UM SENTRAL"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="15sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/Route4"
+                android:layout_width="0dp"
+                android:layout_height="71dp"
+                android:layout_marginTop="220dp"
+                android:backgroundTint="#FFFFFF"
+                android:text="UM Sentral - Akademik Pengajian Islam - KK12 - UM SENTRAL"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/Route3"
+                android:layout_width="0dp"
+                android:layout_height="71dp"
+                android:layout_marginTop="148dp"
+                android:backgroundTint="#FFFFFF"
+                android:text="UM Central - Kolej Kediaman Kesembilan (KK9)"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/Route2"
+                android:layout_width="0dp"
+                android:layout_height="71dp"
+                android:layout_marginTop="76dp"
+                android:backgroundTint="#FFFFFF"
+                android:text="UM Central - Rumah Antarabangsa"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/Route1"
+                android:layout_width="0dp"
+                android:layout_height="71dp"
+                android:layout_marginTop="4dp"
+                android:backgroundTint="#FFFFFF"
+                android:text="UM Central - Pantai Dalam"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
