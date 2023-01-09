@@ -83,18 +83,18 @@ public class NearestBusStop extends Fragment {
   //     recyclerView.setLayoutManager(new LinearLayoutManager());
         itemList = new ArrayList<>();
 
-//        //add item list
-//
-//        itemList.add(new Item("Academy of Islamic Studies (API)", R.drawable.messageme));
-//        itemList.add(new Item("Academy of Malay Studies", R.drawable.messageme));
-//        itemList.add(new Item("Angkasapuri", R.drawable.messageme));
-//        itemList.add(new Item("API (Luar)", R.drawable.messageme));
-//        itemList.add(new Item("Bangsar South", R.drawable.messageme));
-//        itemList.add(new Item("Dayasari Residential College (KK5)", R.drawable.messageme));
-//        itemList.add(new Item("Dewan Tuanku Canselor", R.drawable.messageme));
-//        itemList.add(new Item("Faculty of Engineering", R.drawable.messageme));
-//        itemList.add(new Item("Faculty of Business and Accounting", R.drawable.messageme));
-//        itemList.add(new Item("International House", R.drawable.messageme));
+        //add item list
+
+        itemList.add(new Item("Academy of Islamic Studies (API)", R.drawable.messageme));
+        itemList.add(new Item("Academy of Malay Studies", R.drawable.messageme));
+        itemList.add(new Item("Angkasapuri", R.drawable.messageme));
+        itemList.add(new Item("API (Luar)", R.drawable.messageme));
+        itemList.add(new Item("Bangsar South", R.drawable.messageme));
+        itemList.add(new Item("Dayasari Residential College (KK5)", R.drawable.messageme));
+        itemList.add(new Item("Dewan Tuanku Canselor", R.drawable.messageme));
+        itemList.add(new Item("Faculty of Engineering", R.drawable.messageme));
+        itemList.add(new Item("Faculty of Business and Accounting", R.drawable.messageme));
+        itemList.add(new Item("International House", R.drawable.messageme));
 //        itemList.add(new Item("Kinabalu(KK8)/Tun Ahmad Zaidi (KK10) & FSKTM", R.drawable.messageme));
 //        itemList.add(new Item("Kurshiah(KK3)/Bestari(KK4)/Za'ba(KK7)", R.drawable.messageme));
 //        itemList.add(new Item("LRT Universiti", R.drawable.messageme));
