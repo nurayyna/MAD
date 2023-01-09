@@ -1,5 +1,6 @@
 package com.example.assignment;
 
+import android.app.Activity;
 import android.os.Bundle;
 
 import androidx.annotation.Nullable;
@@ -95,29 +96,29 @@ public class NearestBusStop extends Fragment {
         itemList.add(new Item("Faculty of Engineering", R.drawable.messageme));
         itemList.add(new Item("Faculty of Business and Accounting", R.drawable.messageme));
         itemList.add(new Item("International House", R.drawable.messageme));
-//        itemList.add(new Item("Kinabalu(KK8)/Tun Ahmad Zaidi (KK10) & FSKTM", R.drawable.messageme));
-//        itemList.add(new Item("Kurshiah(KK3)/Bestari(KK4)/Za'ba(KK7)", R.drawable.messageme));
-//        itemList.add(new Item("LRT Universiti", R.drawable.messageme));
-//        itemList.add(new Item("MRT Phileo Damansara", R.drawable.messageme));
-//        itemList.add(new Item("Pantai Permai", R.drawable.messageme));
-//        itemList.add(new Item("PASUM", R.drawable.messageme));
-//        itemList.add(new Item("PJ 219 Happy Mansion Apartment", R.drawable.messageme));
-//        itemList.add(new Item("PJ 220 Happy Apartment Gate A", R.drawable.messageme));
-//        itemList.add(new Item("Pj 223 Shell 17/22", R.drawable.messageme));
-//        itemList.add(new Item("Raja Dr Nazrin Shah (KK12)", R.drawable.messageme));
-//        itemList.add(new Item("S.K. Sri Damai", R.drawable.messageme));
-//        itemList.add(new Item("Stadium Hockey", R.drawable.messageme));
-//        itemList.add(new Item("Tuanku Abdul Rahman (KK1)", R.drawable.messageme));
-//        itemList.add(new Item("Tun Syed Zahiruddin (KK9)", R.drawable.messageme));
-//        itemList.add(new Item("UIA PJ (Barat)", R.drawable.messageme));
-//        itemList.add(new Item("UM Central", R.drawable.messageme));
-//        itemList.add(new Item("Ungku Aziz (KK11)", R.drawable.messageme));
-//
-//
-//        if (getArguments() != null) {
-//            mParam1 = getArguments().getString(ARG_PARAM1);
-//            mParam2 = getArguments().getString(ARG_PARAM2);
-//        }
+        itemList.add(new Item("Kinabalu(KK8)/Tun Ahmad Zaidi (KK10) & FSKTM", R.drawable.messageme));
+        itemList.add(new Item("Kurshiah(KK3)/Bestari(KK4)/Za'ba(KK7)", R.drawable.messageme));
+        itemList.add(new Item("LRT Universiti", R.drawable.messageme));
+        itemList.add(new Item("MRT Phileo Damansara", R.drawable.messageme));
+        itemList.add(new Item("Pantai Permai", R.drawable.messageme));
+        itemList.add(new Item("PASUM", R.drawable.messageme));
+        itemList.add(new Item("PJ 219 Happy Mansion Apartment", R.drawable.messageme));
+        itemList.add(new Item("PJ 220 Happy Apartment Gate A", R.drawable.messageme));
+        itemList.add(new Item("Pj 223 Shell 17/22", R.drawable.messageme));
+        itemList.add(new Item("Raja Dr Nazrin Shah (KK12)", R.drawable.messageme));
+        itemList.add(new Item("S.K. Sri Damai", R.drawable.messageme));
+        itemList.add(new Item("Stadium Hockey", R.drawable.messageme));
+        itemList.add(new Item("Tuanku Abdul Rahman (KK1)", R.drawable.messageme));
+        itemList.add(new Item("Tun Syed Zahiruddin (KK9)", R.drawable.messageme));
+        itemList.add(new Item("UIA PJ (Barat)", R.drawable.messageme));
+        itemList.add(new Item("UM Central", R.drawable.messageme));
+        itemList.add(new Item("Ungku Aziz (KK11)", R.drawable.messageme));
+
+
+        if (getArguments() != null) {
+            mParam1 = getArguments().getString(ARG_PARAM1);
+            mParam2 = getArguments().getString(ARG_PARAM2);
+        }
     }
 
 //    private void filterList(String text){
@@ -129,7 +130,7 @@ public class NearestBusStop extends Fragment {
 //        }
 //
 //        if (filteredList.isEmpty()){
-//            Toast.makeText(this,"No data found", Toast.LENGTH_SHORT).show();
+//            Toast.makeText(getActivity(),"No data found",Toast.LENGTH_SHORT).show();
 //        } else {
 //            itemAdapter.setFilteredList(filteredList);
 //        }

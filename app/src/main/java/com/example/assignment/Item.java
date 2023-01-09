@@ -1,15 +1,24 @@
 package com.example.assignment;
 
-public class Item {
+import java.util.ArrayList;
+import java.util.List;
 
-    public Item(String itemName, int messageme) {
+public class Item {
+    private String mText;
+    private int mImageId;
+
+    public Item(String text, int imageId) {
+        mText = text;
+        mImageId = imageId;
     }
 
-//    public String getItemName() {
-//        return itemName;
-//    }
-//
-//    public void setItemName(String itemName) {
-//        this.itemName = itemName;
-//    }
+    public String getText() {
+        return mText;
+    }
+
+    public int getImageId() {
+        return mImageId;
+    }
+
+
 }

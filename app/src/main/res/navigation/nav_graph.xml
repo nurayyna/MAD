@@ -38,8 +38,8 @@
             android:id="@+id/action_menu_to_notification"
             app:destination="@id/notification" />
         <action
-            android:id="@+id/action_menu_to_nearestBusStop"
-            app:destination="@id/nearestBusStop" />
+            android:id="@+id/action_menu_to_listBusStop"
+            app:destination="@id/listBusStop" />
     </fragment>
     <fragment
         android:id="@+id/notification"
@@ -47,9 +47,9 @@
         android:label="fragment_notification"
         tools:layout="@layout/fragment_notification" />
     <fragment
-        android:id="@+id/nearestBusStop"
-        android:name="com.example.assignment.NearestBusStop"
-        android:label="fragment_nearest_bus_stop"
-        tools:layout="@layout/fragment_nearest_bus_stop" />
+        android:id="@+id/listBusStop"
+        android:name="com.example.assignment.ListBusStop"
+        android:label="fragment_list_bus_stop"
+        tools:layout="@layout/fragment_list_bus_stop" />
 
 </navigation>

@@ -81,7 +81,7 @@ public class menu extends Fragment {
         BtnBusBooking.setOnClickListener(BusBooking);
 
         ImageButton BtnNearestBusStop = view.findViewById(R.id.NearestBusStopBtn);
-        View.OnClickListener BusStop = v -> Navigation.findNavController(view).navigate(R.id.action_menu_to_nearestBusStop);
+        View.OnClickListener BusStop = v -> Navigation.findNavController(view).navigate(R.id.action_menu_to_listBusStop);
         BtnNearestBusStop.setOnClickListener(BusStop);
 
         ImageButton BtnNotification = view.findViewById(R.id.NotificationBtn);
