@@ -1,5 +1,6 @@
 package com.example.assignment;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.annotation.Nullable;
@@ -9,6 +10,7 @@ import androidx.navigation.Navigation;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.ImageButton;
 
 /**
@@ -16,7 +18,10 @@ import android.widget.ImageButton;
  * Use the {@link menu#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class menu extends Fragment {
+public class menu extends Fragment implements View.OnClickListener{
+
+    private ImageButton btnlive;
+    View view;
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -61,8 +66,13 @@ public class menu extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
+        view = inflater.inflate(R.layout.fragment_menu, container, false);
+        ImageButton btnlive = (ImageButton)view.findViewById(R.id.BtnLive);
+
+        btnlive.setOnClickListener(this);
+        return view;
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_menu, container, false);
+       // return inflater.inflate(R.layout.fragment_menu, container, false);
     }
 
     @Override
@@ -87,5 +97,14 @@ public class menu extends Fragment {
         ImageButton BtnNotification = view.findViewById(R.id.NotificationBtn);
         View.OnClickListener Notification = v -> Navigation.findNavController(view).navigate(R.id.action_menu_to_notification);
         BtnNotification.setOnClickListener(Notification);
+    }
+
+    @Override
+    public void onClick(View view) {
+        switch (
+
+        )
+        Intent intent = new Intent(view.getContext(), MapsActivity.class);
+        menu.this.startActivity(intent);
     }
 }

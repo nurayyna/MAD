@@ -107,7 +107,7 @@
         app:srcCompat="@drawable/frame_16" />
 
     <ImageButton
-        android:id="@+id/imageButton17"
+        android:id="@+id/BtnLive"
         android:layout_width="83dp"
         android:layout_height="69dp"
         android:backgroundTint="#FEFEFE"
