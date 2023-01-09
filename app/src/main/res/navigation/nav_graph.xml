@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/menu">
+
+    <fragment
+        android:id="@+id/aboutUsFragment"
+        android:name="com.example.assignment.AboutUsFragment"
+        android:label="fragment_about_us"
+        tools:layout="@layout/fragment_about_us" />
+    <fragment
+        android:id="@+id/contactus2"
+        android:name="com.example.assignment.contactus"
+        android:label="fragment_contactus"
+        tools:layout="@layout/fragment_contactus" />
+    <fragment
+        android:id="@+id/busbooking2"
+        android:name="com.example.assignment.busbooking"
+        android:label="fragment_busbooking"
+        tools:layout="@layout/fragment_busbooking" />
+    <fragment
+        android:id="@+id/menu"
+        android:name="com.example.assignment.menu"
+        android:label="fragment_menu"
+        tools:layout="@layout/fragment_menu" >
+        <action
+            android:id="@+id/action_menu_to_aboutUsFragment"
+            app:destination="@id/aboutUsFragment" />
+        <action
+            android:id="@+id/action_menu_to_contactus2"
+            app:destination="@id/contactus2" />
+        <action
+            android:id="@+id/action_menu_to_busbooking2"
+            app:destination="@id/busbooking2" />
+        <action
+            android:id="@+id/action_menu_to_notification"
+            app:destination="@id/notification" />
+        <action
+            android:id="@+id/action_menu_to_nearestBusStop"
+            app:destination="@id/nearestBusStop" />
+    </fragment>
+    <fragment
+        android:id="@+id/notification"
+        android:name="com.example.assignment.notification"
+        android:label="fragment_notification"
+        tools:layout="@layout/fragment_notification" />
+    <fragment
+        android:id="@+id/nearestBusStop"
+        android:name="com.example.assignment.NearestBusStop"
+        android:label="fragment_nearest_bus_stop"
+        tools:layout="@layout/fragment_nearest_bus_stop" />
+
+</navigation>
