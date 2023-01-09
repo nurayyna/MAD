@@ -4,6 +4,7 @@ import android.os.Bundle;
 
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
+import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.view.LayoutInflater;
@@ -63,28 +64,25 @@ public class NearestBusStop extends Fragment {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.fragment_nearest_bus_stop);
-//
-//        searchView = (SearchView)
-//        SearchView searchView = (SearchView) findViewById(R.id.searchView);
-//        searchView.clearFocus();
-//        searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
-//            @Override
-//            public boolean onQueryTextSubmit(String s) {
-//                return false;
-//            }
-//
-//            @Override
-//            public boolean onQueryTextChange(String s) {
-//                filterList(newText);
-//                return true;
-//            }
-//        });
-//
-//        recyclerView = findViewById(R.id.recyclerView);
-//        recyclerView.setHasFixedSize(true);
-//        recyclerView.setLayoutManager(new LinearLayoutManager(this));
-//        itemList = new ArrayList<>();
-//
+
+        SearchView searchView = (SearchView) recyclerView.findViewById(R.id.searchView);
+        searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
+            @Override
+            public boolean onQueryTextSubmit(String query) {
+                return false;
+            }
+
+           @Override
+           public boolean onQueryTextChange(String newText) {
+                return true;
+            }
+       });
+
+        RecyclerView recyclerView = (RecyclerView) searchView.findViewById(R.id.recyclerView);
+        recyclerView.setHasFixedSize(true);
+  //     recyclerView.setLayoutManager(new LinearLayoutManager());
+        itemList = new ArrayList<>();
+
 //        //add item list
 //
 //        itemList.add(new Item("Academy of Islamic Studies (API)", R.drawable.messageme));

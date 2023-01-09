@@ -11,7 +11,7 @@
         android:layout_width="239dp"
         android:layout_height="128dp"
         android:layout_marginTop="20dp"
-        android:text="For booking email kenderaanjpphb@um.edu.my                                     Note: please fill um pt04 pk01 br018 s02 borang tempahan bas um pt04 pk01 br036"
+        android:text="For booking email kenderaanjpphb@um.edu.my                                     Note: please fill in um pt04 pk01 br018 s02 borang tempahan bas um pt04 pk01 br036"
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

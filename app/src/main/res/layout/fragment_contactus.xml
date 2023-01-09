@@ -12,13 +12,15 @@
         android:id="@+id/ContactUsDetail"
         android:layout_width="226dp"
         android:layout_height="90dp"
-        android:layout_marginTop="156dp"
+        android:layout_marginTop="24dp"
         android:text="03-7967 7022 ext.2630/3311/7984 eshuttlebus@um.edu.my http://jpphb/um.edu/my"
         android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.162"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/CntctUs"
+        app:layout_constraintVertical_bias="0.0" />
 
     <TextView
         android:id="@+id/CntctUs"
