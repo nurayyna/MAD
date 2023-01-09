@@ -17,18 +17,16 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.fragment_menu);
-
-        ImageButton aboutus = findViewById(R.id.aboutus);
+        setContentView(R.layout.activity_main);
 
     }
-
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-
-        getMenuInflater().inflate(R.menu.menu,menu);
-        MenuItem menuItem = menu.findItem(R.id.action_search);
-
-        return super.onCreateOptionsMenu(menu);
-    }
+//
+//    @Override
+//    public boolean onCreateOptionsMenu(Menu menu) {
+//
+//        getMenuInflater().inflate(R.menu.menu,menu);
+//        MenuItem menuItem = menu.findItem(R.id.action_search);
+//
+//        return super.onCreateOptionsMenu(menu);
+//    }
 }

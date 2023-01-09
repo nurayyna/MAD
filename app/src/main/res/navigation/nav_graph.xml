@@ -24,7 +24,7 @@
         android:id="@+id/menu"
         android:name="com.example.assignment.menu"
         android:label="fragment_menu"
-        tools:layout="@layout/fragment_menu" >
+        tools:layout="@layout/fragment_menu">
         <action
             android:id="@+id/action_menu_to_aboutUsFragment"
             app:destination="@id/aboutUsFragment" />

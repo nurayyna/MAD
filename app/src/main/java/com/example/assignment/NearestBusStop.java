@@ -149,53 +149,6 @@ public class NearestBusStop extends Fragment {
 
     @Override
     public void onViewCreated(View view, @Nullable Bundle savedInstanceState){
-        searchView = (SearchView) view.findViewById(R.id.searchView);
-                searchView.clearFocus();
-        searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
-            @Override
-            public boolean onQueryTextSubmit(String s) {
-                return false;
-            }
 
-            @Override
-            public boolean onQueryTextChange(String s) {
-                return false;
-            }
-        });
-
-                recyclerView = view.findViewById(R.id.recyclerView);
-        recyclerView.setHasFixedSize(true);
-//        recyclerView.setLayoutManager(new LinearLayoutManager(this));
-        itemList = new ArrayList<>();
-
-        //add item list
-
-        itemList.add(new Item("Academy of Islamic Studies (API)", R.drawable.messageme));
-        itemList.add(new Item("Academy of Malay Studies", R.drawable.messageme));
-        itemList.add(new Item("Angkasapuri", R.drawable.messageme));
-        itemList.add(new Item("API (Luar)", R.drawable.messageme));
-        itemList.add(new Item("Bangsar South", R.drawable.messageme));
-        itemList.add(new Item("Dayasari Residential College (KK5)", R.drawable.messageme));
-        itemList.add(new Item("Dewan Tuanku Canselor", R.drawable.messageme));
-        itemList.add(new Item("Faculty of Engineering", R.drawable.messageme));
-        itemList.add(new Item("Faculty of Business and Accounting", R.drawable.messageme));
-        itemList.add(new Item("International House", R.drawable.messageme));
-        itemList.add(new Item("Kinabalu(KK8)/Tun Ahmad Zaidi (KK10) & FSKTM", R.drawable.messageme));
-        itemList.add(new Item("Kurshiah(KK3)/Bestari(KK4)/Za'ba(KK7)", R.drawable.messageme));
-        itemList.add(new Item("LRT Universiti", R.drawable.messageme));
-        itemList.add(new Item("MRT Phileo Damansara", R.drawable.messageme));
-        itemList.add(new Item("Pantai Permai", R.drawable.messageme));
-        itemList.add(new Item("PASUM", R.drawable.messageme));
-        itemList.add(new Item("PJ 219 Happy Mansion Apartment", R.drawable.messageme));
-        itemList.add(new Item("PJ 220 Happy Apartment Gate A", R.drawable.messageme));
-        itemList.add(new Item("Pj 223 Shell 17/22", R.drawable.messageme));
-        itemList.add(new Item("Raja Dr Nazrin Shah (KK12)", R.drawable.messageme));
-        itemList.add(new Item("S.K. Sri Damai", R.drawable.messageme));
-        itemList.add(new Item("Stadium Hockey", R.drawable.messageme));
-        itemList.add(new Item("Tuanku Abdul Rahman (KK1)", R.drawable.messageme));
-        itemList.add(new Item("Tun Syed Zahiruddin (KK9)", R.drawable.messageme));
-        itemList.add(new Item("UIA PJ (Barat)", R.drawable.messageme));
-        itemList.add(new Item("UM Central", R.drawable.messageme));
-        itemList.add(new Item("Ungku Aziz (KK11)", R.drawable.messageme));
     }
 }

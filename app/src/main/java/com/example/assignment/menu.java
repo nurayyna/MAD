@@ -65,26 +65,27 @@ public class menu extends Fragment {
         return inflater.inflate(R.layout.fragment_menu, container, false);
     }
 
+    @Override
     public void onViewCreated(View view, @Nullable Bundle savedInstanceState){
 
         ImageButton BtnAboutUs = view.findViewById(R.id.AboutUsBtn);
-        View.OnClickListener AboutUs = v -> Navigation.findNavController(view).navigate(R.id.aboutus);
+        View.OnClickListener AboutUs = v -> Navigation.findNavController(view).navigate(R.id.action_menu_to_aboutUsFragment);
         BtnAboutUs.setOnClickListener(AboutUs);
 
         ImageButton BtnContactUs = view.findViewById(R.id.ContactUsBtn);
-        View.OnClickListener ContactUs = v -> Navigation.findNavController(view).navigate(R.id.contactus);
-        BtnAboutUs.setOnClickListener(ContactUs);
+        View.OnClickListener ContactUs = v -> Navigation.findNavController(view).navigate(R.id.action_menu_to_contactus2);
+        BtnContactUs.setOnClickListener(ContactUs);
 
         ImageButton BtnBusBooking = view.findViewById(R.id.BusBookingBtn);
-        View.OnClickListener BusBooking = v -> Navigation.findNavController(view).navigate(R.id.busbooking);
-        BtnAboutUs.setOnClickListener(BusBooking);
+        View.OnClickListener BusBooking = v -> Navigation.findNavController(view).navigate(R.id.action_menu_to_busbooking2);
+        BtnBusBooking.setOnClickListener(BusBooking);
 
         ImageButton BtnNearestBusStop = view.findViewById(R.id.NearestBusStopBtn);
-        View.OnClickListener BusStop = v -> Navigation.findNavController(view).navigate(R.id.nearestbusstop);
-        BtnAboutUs.setOnClickListener(BusStop);
+        View.OnClickListener BusStop = v -> Navigation.findNavController(view).navigate(R.id.action_menu_to_nearestBusStop);
+        BtnNearestBusStop.setOnClickListener(BusStop);
 
         ImageButton BtnNotification = view.findViewById(R.id.NotificationBtn);
-        View.OnClickListener Notification = v -> Navigation.findNavController(view).navigate(R.id.notification);
-        BtnAboutUs.setOnClickListener(Notification);
+        View.OnClickListener Notification = v -> Navigation.findNavController(view).navigate(R.id.action_menu_to_notification);
+        BtnNotification.setOnClickListener(Notification);
     }
 }
